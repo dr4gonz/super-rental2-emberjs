@@ -1,0 +1,8 @@
+{ "announcements":  [{
+    "title": "Cool Thing",
+    "text": "Lots of sun today."
+  },
+  {
+    "title": "Lookey",
+    "text": "Ember is cool."
+  }]}

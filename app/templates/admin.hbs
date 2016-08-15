@@ -1,0 +1,21 @@
+<ul>
+  {{#each model as |announcements|}}
+    {{announcement-tile announcements=announcements destroyAnnouncement="destroyAnnouncement"}}
+  {{/each}}
+</ul>
+
+<h1>New Announcement</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="announce-text">Text</label>
+        {{input value=text id="announce-text"}}
+      </div>
+      <button {{action 'saveAnnouncement'}}>Save</button>
+    </form>
+  </div>
