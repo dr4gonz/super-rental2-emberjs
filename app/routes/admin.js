@@ -10,8 +10,9 @@ export default Ember.Route.extend({
       this.transitionTo('admin');
     },
     saveAnnouncement() {
+
       var params = {
-        title: this.get("title"),
+        title: this.get('title'),
         text: this.get('announce-text'),
       };
       var newAnnouncement = this.store.createRecord('announcements', params);
