@@ -8,14 +8,13 @@ We hope you find exactly what you're looking for in a place to stay.
   {{/each}}
 </ul>
 
-{{new-rental save2="save3"}}
-
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.name}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
+{{new-city saveCity="saveCity"}}
 <h3>Announcements</h3>
 <ul>
   {{#each model.announcements as |announcement|}}

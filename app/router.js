@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('admin');
   this.route('admin-tile');
   this.route('rental', {path: '/rental/:rental_id'});
+  this.route('city', {path: '/city/:city_id'});
 });
 
 export default Router;
